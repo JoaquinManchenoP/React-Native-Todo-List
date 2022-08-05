@@ -4,14 +4,14 @@ import TodoCard from "./TodoCard";
 
 
 const TodoListContainer = ({todos}) => {
-return (
-    <View style = {styles.todolist__container}>
-       {todos.map((todo) => {
-        return (
-            <TodoCard todo = {todo}/>
-        )
-       })}
-    </View>
+    return (
+        <View style = {styles.todolist__container}>
+           {todos.map((todo, idx) => {
+            return (
+                <TodoCard todo = {todo} key = {todo}/>
+            )
+           })}
+        </View>
     )
 }
 

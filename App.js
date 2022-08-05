@@ -13,9 +13,9 @@ export default function App() {
 
   const handleAddTodo = () => {
     setTodos([...todos, inputValue]);
-    console.log(todos);
     setInputValue('');
   }
+
 
   return (
     <SafeAreaView style={styles.container}>
